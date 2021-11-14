@@ -2,7 +2,7 @@ from utils import *
 ##### LOAD DATA INFO #####
 import pandas as pd
 
-df = pd.read_csv("/Users/david/Documents/TED Talk + Glassdoor NLP Data and Code/ted_data/.cleaned ted talks w LDA(04.28.21).csv.icloud")
+df = pd.read_csv("/Users/david/Documents/TED Talk + Glassdoor NLP Data and Code/ted_data/.cleaned ted talks w LDA(04.28.21).csv")
 list(df)
 import matplotlib.pyplot as plt
 
@@ -30,9 +30,9 @@ df["transcript_np"] = df.transcript.apply(rem_pronoun)
 
 # LOAD DATA
 # import pandas as pd
-# df1 = pd.read_csv("C:/Users/cbh2132/Documents/transcripts.csv")
+# df1 = pd.read_csv("/Users/david/Documents/TED Talk + Glassdoor NLP Data and Code-2/ted_data/.transcripts.csv")
 # list(df1)
-# df2 = pd.read_csv("C:/Users/cbh2132/Documents/ted_main.csv")
+# df2 = pd.read_csv("/Users/david/Documents/TED Talk + Glassdoor NLP Data and Code-2/ted_data/.ted_main.csv.icloud")
 # list(df2)
 
 # JOIN TRANSCRIPTS AND TRACKING VARIABLES
@@ -287,7 +287,7 @@ import pandas as pd
 from gensim import models
 
 lda_model = models.LdaModel.load('lda.model25-100pass')
-df = pd.read_csv("/Users/david/Documents/TED Talk + Glassdoor NLP Data and Code/ted_data/.cleaned ted talks w LDA(04.28.21).csv.icloud")
+df = pd.read_csv("/Users/david/Documents/TED Talk + Glassdoor NLP Data and Code/ted_data/.cleaned ted talks w LDA(04.28.21).csv")
 list(df)
 
 # CORRELATIONS
